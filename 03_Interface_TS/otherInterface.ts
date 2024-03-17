@@ -3,14 +3,14 @@
 // Indexable types have an index signature that describes the type you can use to index into the object,
 // along with the corresponding return types when indexing.
 
-// interface IceCreamArray {
-//   [index: number]: string;
-// }
+interface IceCreamArray {
+  [index: number]: string;
+}
 
-// let myIceCream: IceCreamArray;
-// myIceCream = ["chocolate", "vanilla", "strawberry"];
-// let myStr: string = myIceCream[0];
-// console.log(myStr);
+let myIceCream: IceCreamArray;
+myIceCream = ["chocolate", "vanilla", "strawberry"];
+let myStr: string = myIceCream[0];
+console.log(myStr);
 
 // You can also use the built-in array type or create a type alias for a custom array, but by using an interface,
 // you can define your own array type so that anyone who wants to work with that interface can apply it consistently.
